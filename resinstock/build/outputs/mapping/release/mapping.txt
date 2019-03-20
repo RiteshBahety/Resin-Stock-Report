@@ -1,0 +1,96 @@
+com.resin.Production -> com.resin.a:
+    com.resin.Production$QuantityManufactured uf -> a
+    com.resin.Production$QuantityManufactured pf -> b
+    com.resin.Production$QuantityManufactured mr -> c
+    android.content.Context context -> d
+    void <init>(android.content.Context) -> <init>
+    void setUF(byte,int) -> a
+    void setPF(byte,int) -> b
+    void setMR(byte,int) -> c
+    java.lang.String toString() -> toString
+com.resin.Production$QuantityManufactured -> com.resin.a$a:
+    byte numberOfCharge -> b
+    int quantity -> c
+    com.resin.Production this$0 -> a
+    void <init>(com.resin.Production,byte,int) -> <init>
+    byte getNumberOfCharge() -> a
+    int getQuantity() -> b
+com.resin.RawMaterialLeft -> com.resin.b:
+    int aceticAcid -> a
+    int caustic -> b
+    int formalin -> c
+    int liqourAmmonia -> d
+    int maida -> e
+    int melamine -> f
+    int phenol -> g
+    int stureangBond -> h
+    com.resin.RawMaterialUsed rawMaterialUsed -> i
+    android.content.Context context -> j
+    android.content.SharedPreferences preferences -> k
+    android.content.SharedPreferences$Editor editor -> l
+    void <init>(android.content.Context) -> <init>
+    void enableEditing() -> a
+    void commitData() -> b
+    int getAceticAcid() -> c
+    void setAceticAcid(int) -> a
+    int getCaustic() -> d
+    void setCaustic(int) -> b
+    int getFormalin() -> e
+    void setFormalin(int) -> c
+    int getLiqourAmmonia() -> f
+    void setLiqourAmmonia(int) -> d
+    int getMaida() -> g
+    void setMaida(int) -> e
+    int getMelamine() -> h
+    void setMelamine(int) -> f
+    int getPhenol() -> i
+    void setPhenol(int) -> g
+    int getStureangBond() -> j
+    void setStureangBond(int) -> h
+    void setRawMaterialUsed(com.resin.RawMaterialUsed) -> a
+    java.lang.String toString() -> toString
+com.resin.RawMaterialUsed -> com.resin.c:
+    int formalin -> a
+    int maida -> b
+    int phenol -> c
+    android.content.Context context -> d
+    android.content.SharedPreferences preferences -> e
+    android.content.SharedPreferences$Editor editor -> f
+    void <init>(android.content.Context) -> <init>
+    void enableEditing() -> a
+    void commitData() -> b
+    int getFormalin() -> c
+    void setFormalin(int) -> a
+    int getMaida() -> d
+    void setMaida(int) -> b
+    int getPhenol() -> e
+    void setPhenol(int) -> c
+    java.lang.String toString() -> toString
+com.resin.ResinStockActivity -> com.resin.ResinStockActivity:
+    com.resin.sms.MessageSender sender -> a
+    void <init>() -> <init>
+    void onCreate(android.os.Bundle) -> onCreate
+    void onStart() -> onStart
+    void onSubmit(android.view.View) -> onSubmit
+    void sendSMS(java.lang.String) -> a
+    int extractIntValue(java.lang.String) -> b
+com.resin.ResinStockActivity$CustomOnItemSelectedListener -> com.resin.ResinStockActivity$a:
+    android.widget.Spinner spinner -> b
+    int currentSelection -> c
+    com.resin.ResinStockActivity this$0 -> a
+    void <init>(com.resin.ResinStockActivity,android.widget.Spinner) -> <init>
+    void onItemSelected(android.widget.AdapterView,android.view.View,int,long) -> onItemSelected
+    void onNothingSelected(android.widget.AdapterView) -> onNothingSelected
+com.resin.StockInHand -> com.resin.d:
+    int uf -> a
+    int pf -> b
+    int mr -> c
+    android.content.Context context -> d
+    void <init>(android.content.Context) -> <init>
+    void setUF(int) -> a
+    void setPF(int) -> b
+    void setMR(int) -> c
+    java.lang.String toString() -> toString
+com.resin.sms.MessageSender -> com.resin.a.a:
+    void <init>() -> <init>
+    void sendSMS(java.lang.String,android.content.Context) -> a

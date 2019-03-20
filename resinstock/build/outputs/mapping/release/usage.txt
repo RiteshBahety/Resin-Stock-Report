@@ -1,0 +1,8 @@
+com.resin.BuildConfig
+com.resin.R
+com.resin.R$array
+com.resin.R$id
+com.resin.R$layout
+com.resin.R$mipmap
+com.resin.R$string
+com.resin.R$style
