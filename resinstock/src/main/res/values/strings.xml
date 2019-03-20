@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Resin Stock</string>
+
+    <string name="blank">%d</string>
+    <string name="colon">:</string>
+    <string name="equal">=</string>
+    <string name="hyphen">-</string>
+    <string name="zero">0</string>
+
+    <string name="raw_material_left">Raw Material Left</string>
+    <string name="raw_material_used">Raw Material Used</string>
+
+    //Heading
+    <string name="charge">Charge</string>
+    <string name="items">Items</string>
+    <string name="quantity">Quantity</string>
+    <string name="resin">Resin</string>
+    <string name="stock">Stock</string>
+    <string name="weight">Weight</string>
+
+    //Resin
+    <string name="mr">MR</string>
+    <string name="pf">PF</string>
+    <string name="uf">UF</string>
+
+    //Raw Materials
+    <string name="acetic_acid">Acetic Acid</string>
+    <string name="caustic_solid">Caustic (Solid)</string>
+    <string name="formalin">Formalin</string>
+    <string name="liquor_ammonia">Liqour Ammonia</string>
+    <string name="maida">Maida</string>
+    <string name="melamine">Melamine</string>
+    <string name="phenol">Phenol</string>
+    <string name="stureang_bond">Stureang Bond</string>
+
+    //Units
+    <string name="bag">bags</string>
+    <string name="drum">drum</string>
+    <string name="kenny">kenny</string>
+    <string name="kg">kg</string>
+
+    <string name="no_charge_made">No charge made</string>
+    <string name="production_report">PRODUCTION REPORT</string>
+
+    //Button
+    <string name="submit">Submit</string>
+
+    <string-array name="number_of_charge">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+</resources>
