@@ -7,8 +7,7 @@
     <string name="hyphen">-</string>
     <string name="zero">0</string>
 
-    <string name="raw_material_left">Raw Material Left</string>
-    <string name="raw_material_used">Raw Material Used</string>
+    <string name="raw_material">Raw Material</string>
 
     //Heading
     <string name="charge">Charge</string>
@@ -43,6 +42,8 @@
     <string name="production_report">PRODUCTION REPORT</string>
 
     //Button
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
     <string name="submit">Submit</string>
 
     <string-array name="number_of_charge">

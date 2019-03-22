@@ -9,7 +9,8 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="16dp">
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -136,7 +137,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingTop="10dp"
-                android:text="@string/raw_material_used"
+                android:text="@string/raw_material"
                 android:textAlignment="center"
                 android:textSize="18sp"
                 android:visibility="visible" />
@@ -179,138 +180,8 @@
 
                 <TableRow
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/formalin"
-                        android:visibility="visible" />
-
-                    <EditText
-                        android:id="@+id/formalin_used_quantity"
-                        android:layout_width="100dp"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="number"
-                        android:maxLength="6"
-                        android:text="@string/zero"
-                        android:visibility="visible"
-                        tools:ignore="LabelFor" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/kg"
-                        android:visibility="visible" />
-                </TableRow>
-
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/maida"
-                        android:visibility="visible" />
-
-                    <EditText
-                        android:id="@+id/maida_used_quantity"
-                        android:layout_width="100dp"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="number"
-                        android:maxLength="6"
-                        android:text="@string/zero"
-                        android:visibility="visible"
-                        tools:ignore="LabelFor" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/bag"
-                        android:visibility="visible" />
-                </TableRow>
-
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/phenol"
-                        android:visibility="visible" />
-
-                    <EditText
-                        android:id="@+id/phenol_used_quantity"
-                        android:layout_width="100dp"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="number"
-                        android:maxLength="6"
-                        android:text="@string/zero"
-                        android:visibility="visible"
-                        tools:ignore="LabelFor" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/drum"
-                        android:visibility="visible" />
-                </TableRow>
-
-            </TableLayout>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingTop="10dp"
-                android:text="@string/raw_material_left"
-                android:textAlignment="center"
-                android:textSize="18sp"
-                android:visibility="visible" />
-
-            <TableLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:visibility="visible">
-
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="#00FF00"
-                        android:text="@string/items"
-                        android:textSize="18sp"
-                        android:visibility="visible" />
-
-                    <TextView
-                        android:id="@id/quantity"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="#00FF00"
-                        android:text="@string/quantity"
-                        android:textSize="18sp"
-                        android:visibility="visible" />
-
-                    <TextView
-                        android:id="@+id/weight"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="#00FF00"
-                        android:text="@string/weight"
-                        android:textSize="18sp"
-                        android:visibility="visible" />
-                </TableRow>
-
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -318,16 +189,18 @@
                         android:text="@string/acetic_acid"
                         android:visibility="visible" />
 
-                    <EditText
+                    <TextView
                         android:id="@+id/acetic_acid_quantity"
                         android:layout_width="100dp"
                         android:layout_height="wrap_content"
+                        android:background="#F0F0F0"
                         android:ems="10"
                         android:inputType="number"
                         android:maxLength="6"
+                        android:onClick="launchDialog"
                         android:text="@string/zero"
-                        android:visibility="visible"
-                        tools:ignore="LabelFor" />
+                        android:textAlignment="center"
+                        android:visibility="visible" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -338,7 +211,8 @@
 
                 <TableRow
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -346,16 +220,18 @@
                         android:text="@string/caustic_solid"
                         android:visibility="visible" />
 
-                    <EditText
+                    <TextView
                         android:id="@+id/caustic_solid_quantity"
                         android:layout_width="100dp"
                         android:layout_height="wrap_content"
+                        android:background="#F0F0F0"
                         android:ems="10"
                         android:inputType="number"
                         android:maxLength="6"
+                        android:onClick="launchDialog"
                         android:text="@string/zero"
-                        android:visibility="visible"
-                        tools:ignore="LabelFor" />
+                        android:textAlignment="center"
+                        android:visibility="visible" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -366,7 +242,8 @@
 
                 <TableRow
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -374,16 +251,18 @@
                         android:text="@string/formalin"
                         android:visibility="visible" />
 
-                    <EditText
+                    <TextView
                         android:id="@+id/formaldehyde_quantity"
                         android:layout_width="100dp"
                         android:layout_height="wrap_content"
+                        android:background="#F0F0F0"
                         android:ems="10"
                         android:inputType="number"
                         android:maxLength="6"
+                        android:onClick="launchDialog"
                         android:text="@string/zero"
-                        android:visibility="visible"
-                        tools:ignore="LabelFor" />
+                        android:textAlignment="center"
+                        android:visibility="visible" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -394,7 +273,8 @@
 
                 <TableRow
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -402,16 +282,18 @@
                         android:text="@string/liquor_ammonia"
                         android:visibility="visible" />
 
-                    <EditText
+                    <TextView
                         android:id="@+id/liquor_ammonia_quantity"
                         android:layout_width="100dp"
                         android:layout_height="wrap_content"
+                        android:background="#F0F0F0"
                         android:ems="10"
                         android:inputType="number"
                         android:maxLength="6"
+                        android:onClick="launchDialog"
                         android:text="@string/zero"
-                        android:visibility="visible"
-                        tools:ignore="LabelFor" />
+                        android:textAlignment="center"
+                        android:visibility="visible" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -422,7 +304,8 @@
 
                 <TableRow
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -430,16 +313,18 @@
                         android:text="@string/maida"
                         android:visibility="visible" />
 
-                    <EditText
+                    <TextView
                         android:id="@+id/maida_quantity"
                         android:layout_width="100dp"
                         android:layout_height="wrap_content"
+                        android:background="#F0F0F0"
                         android:ems="10"
                         android:inputType="number"
                         android:maxLength="6"
+                        android:onClick="launchDialog"
                         android:text="@string/zero"
-                        android:visibility="visible"
-                        tools:ignore="LabelFor" />
+                        android:textAlignment="center"
+                        android:visibility="visible" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -450,7 +335,8 @@
 
                 <TableRow
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -458,16 +344,18 @@
                         android:text="@string/melamine"
                         android:visibility="visible" />
 
-                    <EditText
+                    <TextView
                         android:id="@+id/melamine_quantity"
                         android:layout_width="100dp"
                         android:layout_height="wrap_content"
+                        android:background="#F0F0F0"
                         android:ems="10"
                         android:inputType="number"
                         android:maxLength="6"
+                        android:onClick="launchDialog"
                         android:text="@string/zero"
-                        android:visibility="visible"
-                        tools:ignore="LabelFor" />
+                        android:textAlignment="center"
+                        android:visibility="visible" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -478,7 +366,8 @@
 
                 <TableRow
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -486,16 +375,18 @@
                         android:text="@string/phenol"
                         android:visibility="visible" />
 
-                    <EditText
+                    <TextView
                         android:id="@+id/phenol_quantity"
                         android:layout_width="100dp"
                         android:layout_height="wrap_content"
+                        android:background="#F0F0F0"
                         android:ems="10"
                         android:inputType="number"
                         android:maxLength="6"
+                        android:onClick="launchDialog"
                         android:text="@string/zero"
-                        android:visibility="visible"
-                        tools:ignore="LabelFor" />
+                        android:textAlignment="center"
+                        android:visibility="visible" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -507,7 +398,8 @@
 
                 <TableRow
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -515,16 +407,18 @@
                         android:text="@string/stureang_bond"
                         android:visibility="visible" />
 
-                    <EditText
+                    <TextView
                         android:id="@+id/stureang_bond_quantity"
                         android:layout_width="100dp"
                         android:layout_height="wrap_content"
+                        android:background="#F0F0F0"
                         android:ems="10"
                         android:inputType="number"
                         android:maxLength="6"
+                        android:onClick="launchDialog"
                         android:text="@string/zero"
-                        android:visibility="visible"
-                        tools:ignore="LabelFor" />
+                        android:textAlignment="center"
+                        android:visibility="visible" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -563,7 +457,7 @@
                         android:visibility="visible" />
 
                     <TextView
-                        android:id="@id/weight"
+                        android:id="@+id/weight"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="#0000FF"
